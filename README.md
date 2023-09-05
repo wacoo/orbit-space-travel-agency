@@ -1,70 +1,184 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
-## Available Scripts
+Modify this file to match your project and remove sections that don't apply.
 
-In the project directory, you can run:
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-### `npm start`
+OPTIONAL SECTIONS:
+- FAQ
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After you're finished please remove all the comments and instructions!
+-->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <!-- <img src="./src/images/s_logo.png" alt="logo" width="140"  height="auto" /> -->
+  <br/>
 
-### `npm test`
+  <h3><b>Orbit Space Travel Agency</b></h3>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 📗 Table of Contents
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+  - [💻 Project Presentation](#presentation)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- PROJECT DESCRIPTION  -->
 
-### `npm run eject`
+# 📖 Orbit Space Travel Agency <a name="about-project"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Orbit: Your Gateway to Space Exploration and Commercial Ventures
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Orbit is a cutting-edge React-based app that unlocks the wonders of space exploration and commercial opportunities. Seamlessly blending scientific research and commercial endeavors, Orbit revolutionizes the way we engage with space.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+With its sleek and intuitive interface, powered by React technology, Orbit provides a seamless user experience, allowing easy navigation and interaction. Discover groundbreaking scientific research missions as Orbit facilitates collaborations between scientists, research institutions, and astronauts. From studying microgravity effects to unraveling celestial mysteries, the app empowers scientific discoveries that reshape our understanding of the universe.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Orbit also serves as a launchpad for commercial activities in space, offering tools and resources for satellite deployment, space manufacturing, and resource extraction. Seamlessly integrated APIs provide real-time data updates and streamline operations, ensuring businesses thrive in the new frontier.
 
-## Learn More
+Looking ahead, Orbit envisions a thriving space tourism industry. The app offers immersive experiences, enabling users to book stays at luxurious space hotels and enjoy breathtaking views of Earth. Additionally, Orbit is actively involved in pioneering efforts towards space colonization, developing innovative solutions for sustainable space habitats.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Join Orbit today and embark on an extraordinary journey of space exploration, scientific breakthroughs, and commercial ventures, as we redefine the possibilities of our cosmic frontier.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠 Built With <a name="built-with"></a>
 
-### Code Splitting
+### Tech Stack <a name="tech-stack"></a>
+- HTML/CSS/JS/JSX
+- React/Redux/React-Redux/Router
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<!-- Features -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Key Features <a name="key-features"></a>
+- Responsive and Intuitive User Interface
+- Seamless Navigation
+- Real-time Data Updates
+- Interactive Visualizations
+- Rocket Selection
+- Mission Exploration
+- Booking and Reservation
+- Flight Management
+- Flight Cancellation
 
-### Making a Progressive Web App
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- GETTING STARTED -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 💻 Getting Started <a name="getting-started"></a>
+To get a local copy up and running, follow these steps.
+- Open the index.html with a web browser (Chrome, Firefox, Safari...)
 
-### Advanced Configuration
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+In order to run this project you need:
+- A web browser (Chrome, Firefox, Safari...)
+<!--
+Example command:
 
-### Deployment
+```sh
+ gem install rails
+```
+ -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Setup
+Clone the repository to desired directory on local computer.
+> `git clone https://github.com/wacoo/orbit-space-travel-agency`
 
-### `npm run build` fails to minify
+> `cd orbit-space-travel-agency`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> `npm install`
+
+> `npm start`
+
+## 👥 Author <a name="authors"></a>
+- GitHub: [@wacoo](https://github.com/wacoo)
+- Twitter: [@wabaham9](https://twitter.com/wabaham9)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/wondmagegn-abriham-b867289a)
+
+## 👥 Author <a name="authors"></a>
+- GitHub: [@axcell-0](https://github.com/axcell-0)
+- Twitter: [@](https://twitter.com/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+- **Enhanced User Experience**: Orbit is committed to continuously improving the user experience of our React-based app. We will invest in user research and feedback to implement new features, streamline navigation, and optimize performance, ensuring a seamless and delightful experience for all users.
+- **Space Education and Outreach**: We recognize the importance of education and public outreach in inspiring the next generation of space enthusiasts. Orbit plans to expand its offerings by incorporating educational content, interactive lessons, and engaging experiences that promote scientific literacy and foster a passion for space exploration.
+- **Advanced Data Analytics**: Leveraging the power of React and data analytics, Orbit aims to provide users with advanced insights and visualizations of space-related data. Through machine learning algorithms and predictive analytics, we will offer personalized recommendations, trend analysis, and data-driven decision-making tools for researchers, businesses, and space enthusiasts.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+- We are freelance developers. If you like our work, please support us by spreading the word.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+- We want to thank all my clients for their patronage.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+- **How can I find you?**
+
+  - Please find our contact information below.
+
+- **Can you give me a price range for your services?**
+
+  - To get price range, please contact us with: wabaham9@gmail.com
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](MIT.md) licensed.
