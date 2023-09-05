@@ -1,31 +1,23 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import './Rocket.css';
+import { fetchRockets } from '../features/rockets/rocketsSlice';
 
 const Rocket = () => {
-  const rockets = [
-    {
-      title: 'Falcon 1',
-      description: 'Falcon 1 is a pioneering rocket crafted by SpaceX, a visionary aerospace company. Designed to revolutionize the space industry, this two-stage, liquid-fueled launch vehicle stands at the forefront of affordable and efficient space transportation.',
-    },
-    {
-      title: 'Falcon 9',
-      description: 'Falcon 9 is a pioneering rocket crafted by SpaceX, a visionary aerospace company. Designed to revolutionize the space industry, this two-stage, liquid-fueled launch vehicle stands at the forefront of affordable and efficient space transportation.',
-    },
-    {
-      title: 'Falcon Heavy',
-      description: 'Falcon Heavy is a pioneering rocket crafted by SpaceX, a visionary aerospace company. Designed to revolutionize the space industry, this two-stage, liquid-fueled launch vehicle stands at the forefront of affordable and efficient space transportation.',
-    },
-    {
-      title: 'Falcon Light',
-      description: 'Falcon Light is a pioneering rocket crafted by SpaceX, a visionary aerospace company. Designed to revolutionize the space industry, this two-stage, liquid-fueled launch vehicle stands at the forefront of affordable and efficient space transportation.',
-    },
-  ];
+  const dispatch = useDispatch();
+  const rockets = useSelector((state) => state.rockets.rockets);
+
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, [dispatch]);
+
   return rockets.map((rocket) => (
-    <div className="card" key={rocket.title}>
+    <div className="card" key={rocket.rocket_name}>
       <div className="card-image">
-        <img src="" alt="" />
+        <img src={rocket.flickr_images[1]} alt="" />
       </div>
       <div className="card-text">
-        <h2 className="rocket-name">{rocket.title}</h2>
+        <h2 className="rocket-name">{rocket.rocket_name}</h2>
         <p className="rocket-desc">
           {rocket.description}
         </p>
