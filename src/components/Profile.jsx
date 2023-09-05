@@ -1,3 +1,5 @@
+import './Profile.css';
+
 const Profile = () => (
   <h1>My Profile</h1>
 );
