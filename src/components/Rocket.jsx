@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import './Rocket.css';
-import { fetchRockets, reserveRocket } from '../features/rockets/rocketsSlice';
+import { cancelRocketReservation, fetchRockets, reserveRocket } from '../features/rockets/rocketsSlice';
 
 const Rocket = () => {
   const dispatch = useDispatch();
@@ -15,6 +15,10 @@ const Rocket = () => {
     dispatch(reserveRocket(id));
   };
 
+  const cancelReservation = (id) => {
+    dispatch(cancelRocketReservation(id));
+  };
+
   return rockets.map((rocket) => (
     <div className="card" key={rocket.id}>
       <div className="card-image">
@@ -26,7 +30,7 @@ const Rocket = () => {
           {rocket.description}
         </p>
         <div>
-          {rocket.reserved ? (<button type="button">Cancel Reservation</button>)
+          {rocket.reserved ? (<button type="button" onClick={() => cancelReservation(rocket.id)}>Cancel Reservation</button>)
             : (<button type="button" onClick={() => handleReserveRocket(rocket.id)}>Reserve Rocket</button>)}
         </div>
       </div>
