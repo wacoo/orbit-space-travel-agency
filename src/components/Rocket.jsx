@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import './Rocket.css';
-import { fetchRockets } from '../features/rockets/rocketsSlice';
+import { fetchRockets, reserveRocket } from '../features/rockets/rocketsSlice';
 
 const Rocket = () => {
   const dispatch = useDispatch();
@@ -11,8 +11,12 @@ const Rocket = () => {
     dispatch(fetchRockets());
   }, [dispatch]);
 
+  const handleReserveRocket = (id) => {
+    dispatch(reserveRocket(id));
+  };
+
   return rockets.map((rocket) => (
-    <div className="card" key={rocket.rocket_name}>
+    <div className="card" key={rocket.id}>
       <div className="card-image">
         <img src={rocket.flickr_images[1]} alt="" />
       </div>
@@ -22,7 +26,8 @@ const Rocket = () => {
           {rocket.description}
         </p>
         <div>
-          <button type="button">Reserve Rocket</button>
+          {rocket.reserved ? (<button type="button">Cancel Reservation</button>)
+            : (<button type="button" onClick={() => handleReserveRocket(rocket.id)}>Reserve Rocket</button>)}
         </div>
       </div>
     </div>
