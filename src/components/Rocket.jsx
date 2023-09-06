@@ -11,6 +11,10 @@ const Rocket = () => {
     dispatch(fetchRockets());
   }, [dispatch]);
 
+  useEffect(() => {
+    console.log(rockets);
+  }, [rockets]);
+
   const handleReserveRocket = (id) => {
     dispatch(reserveRocket(id));
   };

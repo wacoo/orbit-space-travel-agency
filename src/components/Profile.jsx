@@ -3,17 +3,31 @@ import './Profile.css';
 
 const Profile = () => {
   const rockets = useSelector((state) => state.rockets.rockets);
-  const dataFetched = useSelector((state) => state.rockets.fetchedData);
   console.log(rockets);
   return (
-    <div className="profile-wrapper">
-      <div className="my-missions">
-        {/*  */}
-      </div>
-      <div className="my-rockets">
-        {rockets.map((rocket) => (
-          dataFetched ? <p key={rocket.id}>{rocket.rocket_name}</p> : <p>Loading...</p>
-        ))}
+    <div className="profile-container">
+      <div className="profile-wrapper">
+        <table className="my-rockets">
+          <thead>
+            <tr>
+              <th>Rockets</th>
+              <th>Missions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rockets.map((rocket) => (
+              <tr>
+                <td>
+                  
+                </td>
+              </tr>
+              rocket.reserved ? <p key={rocket.id}>{rocket.rocket_name}</p>
+                : null
+            ))}
+          </tbody>
+        </table>
+        <div className="my-missions">
+        </div>        
       </div>
     </div>
   );

@@ -5,7 +5,6 @@ const ROCKET_URL = 'https://api.spacexdata.com/v4/rockets';
 
 const initialState = {
   isLoading: false,
-  dataFetched: false,
   rockets: [
     {
       id: '',
@@ -64,7 +63,6 @@ const rocketsSlice = createSlice({
           data.flickr_images = rocket.flickr_images;
           state.rockets.push(data);
         });
-        state.dataFetched = true;
       })
       .addCase(fetchRockets.rejected, (state, action) => {
         state.isLoading = false;
