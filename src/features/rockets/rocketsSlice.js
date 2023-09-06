@@ -5,6 +5,7 @@ const ROCKET_URL = 'https://api.spacexdata.com/v4/rockets';
 
 const initialState = {
   isLoading: false,
+  dataFetched: false,
   rockets: [
     {
       id: '',
@@ -30,24 +31,20 @@ const rocketsSlice = createSlice({
   initialState,
   reducers: {
     reserveRocket: (state, action) => {
-      const newRockets = state.rockets.map((rocket) => {
+      state.rockets = state.rockets.map((rocket) => {
         if (action.payload !== rocket.id) {
           return rocket;
         }
-        const reserved = { ...rocket, reserved: true };
-        return reserved;
+        return { ...rocket, reserved: true };
       });
-      state.rockets = newRockets;
     },
     cancelRocketReservation: (state, action) => {
-      const newRockets = state.rockets.map((rocket) => {
+      state.rockets = state.rockets.map((rocket) => {
         if (action.payload !== rocket.id) {
           return rocket;
         }
-        const canceled = { ...rocket, reserved: false };
-        return canceled;
+        return { ...rocket, reserved: false };
       });
-      state.rockets = newRockets;
     },
   },
   extraReducers: (builder) => {
@@ -67,6 +64,7 @@ const rocketsSlice = createSlice({
           data.flickr_images = rocket.flickr_images;
           state.rockets.push(data);
         });
+        state.dataFetched = true;
       })
       .addCase(fetchRockets.rejected, (state, action) => {
         state.isLoading = false;
