@@ -1,7 +1,20 @@
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Rockets from './components/Rockets';
+import Profile from './components/Profile';
 
-function App() {
-  return <Rockets />;
-}
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Rockets />,
+  },
+  {
+    path: '/profile',
+    element: <Profile />,
+  },
+  // Here
+]);
+const App = () => (
+  <RouterProvider router={router} />
+);
 
 export default App;
