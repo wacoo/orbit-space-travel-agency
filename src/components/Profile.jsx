@@ -2,28 +2,30 @@ import { useSelector } from 'react-redux';
 import './Profile.css';
 
 const Profile = () => {
+  const { missions, joinedMissions } = useSelector((store) => store.missions);
   const rockets = useSelector((state) => state.rockets.rockets);
+  const reservedMissions = missions.filter((mission) => joinedMissions.includes(mission.id));
   return (
     <div className="profile-container">
       <div className="profile-wrapper">
-        <table className="my-mission">
+        <table className="my-rockets">
           <thead>
             <tr>
               <th>My Missions</th>
             </tr>
           </thead>
-          {/* <tbody>
-            {missions.map((mission) => (
+          <tbody>
+            {reservedMissions.map((mission) => (
               mission.reserved ? (
                 <tr key={mission.id ? mission.id : null}>
                   <td>
-                    <p key={mission.id}>{mission.rocket_name}</p>
+                    <p key={mission.id}>{mission.name}</p>
                   </td>
                 </tr>
               )
                 : null
             ))}
-          </tbody> */}
+          </tbody>
         </table>
         <table className="my-rockets">
           <thead>
@@ -44,7 +46,6 @@ const Profile = () => {
             ))}
           </tbody>
         </table>
-        <div className="my-missions" />
       </div>
     </div>
   );
