@@ -1,22 +1,12 @@
-import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import storage from 'redux-persist/lib/storage';
-import { persistReducer } from 'redux-persist';
+import { configureStore } from '@reduxjs/toolkit';
 import rocketsReducer from '../features/rockets/rocketsSlice';
-
-const persistConfig = {
-  key: 'root',
-  version: 1,
-  storage,
-};
-
-const reducer = combineReducers({
-  rockets: rocketsReducer,
-});
-
-const persistedReducer = persistReducer(persistConfig, reducer);
+import missionsReducer from './missions/missionsSlice';
 
 const store = configureStore({
-  reducer: persistedReducer,
+  reducer: {
+    rockets: rocketsReducer,
+    missions: missionsReducer,
+  },
 });
 
 export default store;
