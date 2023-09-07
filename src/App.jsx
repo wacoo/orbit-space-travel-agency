@@ -1,7 +1,7 @@
-import Header from './components/Header';
+import Rockets from './components/Rockets';
 
 function App() {
-  return <Header />;
+  return <Rockets />;
 }
 
 export default App;
