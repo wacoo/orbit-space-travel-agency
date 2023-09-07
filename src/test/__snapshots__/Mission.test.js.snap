@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Missions correctly 1`] = `
+<DocumentFragment>
+  <table
+    class="mission-table"
+  >
+    <thead>
+      <tr>
+        <th
+          class="mission-cell"
+        >
+          Mission
+        </th>
+        <th
+          class="description-cell"
+        >
+          Description
+        </th>
+        <th
+          class="status-cell"
+        >
+          Status
+        </th>
+        <th
+          class="button-cell"
+        >
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="rows"
+      >
+        <td
+          class="mission-cell"
+        >
+          Mission 1
+        </td>
+        <td
+          class="description-cell"
+        >
+          Description 1
+        </td>
+        <td
+          class="status-cell"
+        >
+          <span
+            class="leave-status"
+          >
+            Active Member
+          </span>
+        </td>
+        <td
+          class="button-cell"
+        >
+          <button
+            class="leave-button"
+            type="button"
+          >
+            Leave Mission
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="join-rows"
+      >
+        <td
+          class="mission-cell"
+        >
+          Mission 2
+        </td>
+        <td
+          class="description-cell"
+        >
+          Description 2
+        </td>
+        <td
+          class="status-cell"
+        >
+          <span
+            class="join-status"
+          >
+            NOT A MEMBER
+          </span>
+        </td>
+        <td
+          class="button-cell"
+        >
+          <button
+            class="join-button"
+            type="button"
+          >
+            Join Mission
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
