@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test rockets component Tests Header 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="logo-title"
+  >
+    <img
+      alt="Logo"
+      src="logo.png"
+    />
+    <h1>
+      rbit Space Travelers' Hub
+    </h1>
+  </div>
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+    </li>
+    <li>
+      <a
+        className=""
+        href="/profile"
+        onClick={[Function]}
+      >
+        Profile
+      </a>
+    </li>
+  </ul>
+</header>
+`;
+
+exports[`Test rockets component Tests Profile 1`] = `
+<div
+  className="profile-container"
+>
+  <header
+    className="header"
+  >
+    <div
+      className="logo-title"
+    >
+      <img
+        alt="Logo"
+        src="logo.png"
+      />
+      <h1>
+        rbit Space Travelers' Hub
+      </h1>
+    </div>
+    <ul>
+      <li>
+        <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          href="/profile"
+          onClick={[Function]}
+        >
+          Profile
+        </a>
+      </li>
+    </ul>
+  </header>
+  <div
+    className="profile-wrapper"
+  >
+    <table
+      className="my-mission"
+    >
+      <thead>
+        <tr>
+          <th>
+            My Missions
+          </th>
+        </tr>
+      </thead>
+    </table>
+    <table
+      className="my-rockets"
+    >
+      <thead>
+        <tr>
+          <th>
+            My Rockets
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <p>
+              Falcon Heavy
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Falcon Light
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      className="my-missions"
+    />
+  </div>
+</div>
+`;
+
+exports[`Test rockets component Tests Rockets 1`] = `
+<div
+  className="container"
+>
+  <header
+    className="header"
+  >
+    <div
+      className="logo-title"
+    >
+      <img
+        alt="Logo"
+        src="logo.png"
+      />
+      <h1>
+        rbit Space Travelers' Hub
+      </h1>
+    </div>
+    <ul>
+      <li>
+        <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          href="/profile"
+          onClick={[Function]}
+        >
+          Profile
+        </a>
+      </li>
+    </ul>
+  </header>
+  <div
+    className="card"
+  >
+    <div
+      className="card-image"
+    >
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      className="card-text"
+    >
+      <h2>
+        Falcon 1
+      </h2>
+      <p
+        className="rocket-desc"
+      >
+        The first to Mars
+      </p>
+      <div>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-image"
+    >
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      className="card-text"
+    >
+      <h2>
+        Star Ship
+      </h2>
+      <p
+        className="rocket-desc"
+      >
+        The first to Mars
+      </p>
+      <div>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-image"
+    >
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      className="card-text"
+    >
+      <h2>
+        Falcon Heavy
+      </h2>
+      <p
+        className="rocket-desc"
+      >
+        <span
+          className="reserved"
+        >
+          Reserved
+        </span>
+        The first to the moon
+      </p>
+      <div>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel Reservation
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-image"
+    >
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      className="card-text"
+    >
+      <h2>
+        Falcon Light
+      </h2>
+      <p
+        className="rocket-desc"
+      >
+        <span
+          className="reserved"
+        >
+          Reserved
+        </span>
+        The first to the moon
+      </p>
+      <div>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel Reservation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

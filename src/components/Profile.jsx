@@ -1,10 +1,12 @@
 import { useSelector } from 'react-redux';
 import './Profile.css';
+import Header from './Header';
 
 const Profile = () => {
   const rockets = useSelector((state) => state.rockets.rockets);
   return (
     <div className="profile-container">
+      <Header />
       <div className="profile-wrapper">
         <table className="my-mission">
           <thead>

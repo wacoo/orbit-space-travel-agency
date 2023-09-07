@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import axios from '../../../node_modules/axios/dist/axios';
 
 const ROCKET_URL = 'https://api.spacexdata.com/v4/rockets';
 
