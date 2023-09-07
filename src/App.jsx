@@ -11,6 +11,7 @@ const router = createBrowserRouter([
     path: '/profile',
     element: <Profile />,
   },
+  // Here
 ]);
 const App = () => (
   <RouterProvider router={router} />
