@@ -18,11 +18,11 @@ const Profile = () => {
             {rockets.map((rocket) => (
               <tr>
                 <td>
-                  
+                  {rocket.reserved ? <p key={rocket.id}>{rocket.rocket_name}</p>
+                  : null}
                 </td>
               </tr>
-              rocket.reserved ? <p key={rocket.id}>{rocket.rocket_name}</p>
-                : null
+              
             ))}
           </tbody>
         </table>
