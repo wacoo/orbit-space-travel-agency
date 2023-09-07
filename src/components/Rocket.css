@@ -9,10 +9,6 @@
   margin: 12px;
 }
 
-.card-text h2 {
-  margin: 12px 0;
-}
-
 .card img {
   width: 200px;
   height: 150px;
@@ -27,12 +23,4 @@
 .card button {
   margin: 12px;
   margin-left: 0;
-}
-
-.card .reserved {
-  padding: 3px;
-  margin: 5px 5px 5px 0;
-  background-color: green;
-  color: #fff;
-  border-radius: 3px;
 }
