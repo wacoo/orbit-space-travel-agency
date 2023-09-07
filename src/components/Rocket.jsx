@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import './Rocket.css';
-import { cancelRocketReservation, fetchRockets, reserveRocket } from '../features/rockets/rocketsSlice';
+import { cancelRocketReservation, fetchRockets, reserveRocket } from '../redux/rockets/rocketsSlice';
 
 const Rocket = () => {
   const dispatch = useDispatch();
