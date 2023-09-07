@@ -39,3 +39,21 @@
   text-decoration: underline;
   text-decoration-color: #03a9f4;
 }
+
+.header ul {
+  width: 20%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header li {
+  margin-right: 24px;
+  padding: 8px 12px;
+}
+
+.header a {
+  text-decoration: none;
+  color: rgb(80, 90, 238);
+}
