@@ -55,47 +55,11 @@ exports[`Test rockets component Tests Profile 1`] = `
 <div
   className="profile-container"
 >
-  <header
-    className="header"
-  >
-    <div
-      className="logo-title"
-    >
-      <img
-        alt="Logo"
-        src="logo.png"
-      />
-      <h1>
-        rbit Space Travelers' Hub
-      </h1>
-    </div>
-    <ul>
-      <li>
-        <a
-          aria-current="page"
-          className="active"
-          href="/"
-          onClick={[Function]}
-        >
-          Rockets
-        </a>
-      </li>
-      <li>
-        <a
-          className=""
-          href="/profile"
-          onClick={[Function]}
-        >
-          Profile
-        </a>
-      </li>
-    </ul>
-  </header>
   <div
     className="profile-wrapper"
   >
     <table
-      className="my-mission"
+      className="my-rockets"
     >
       <thead>
         <tr>
@@ -104,6 +68,7 @@ exports[`Test rockets component Tests Profile 1`] = `
           </th>
         </tr>
       </thead>
+      <tbody />
     </table>
     <table
       className="my-rockets"
@@ -132,9 +97,6 @@ exports[`Test rockets component Tests Profile 1`] = `
         </tr>
       </tbody>
     </table>
-    <div
-      className="my-missions"
-    />
   </div>
 </div>
 `;

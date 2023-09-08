@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Missions correctly 1`] = `
+exports[`Test Missions Component renders Missions correctly 1`] = `
 <DocumentFragment>
   <table
     class="mission-table"

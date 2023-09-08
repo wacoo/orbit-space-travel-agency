@@ -68,6 +68,7 @@ describe('Test rockets component', () => {
   });
 
   it('Tests Profile', () => {
+    useDispatch();
     useSelector.mockReturnValue(stateArray);
     const component = renderer.create(
       <BrowserRouter>
