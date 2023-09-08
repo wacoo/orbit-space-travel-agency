@@ -8,8 +8,10 @@ const Rocket = () => {
   const rockets = useSelector((state) => state.rockets.rockets);
 
   useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
+    if (rockets[0].id === '') {
+      dispatch(fetchRockets());
+    }
+  }, [dispatch, rockets]);
 
   const handleReserveRocket = (id) => {
     dispatch(reserveRocket(id));
