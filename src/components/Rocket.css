@@ -44,3 +44,33 @@
   font-size: 12px;
   font-weight: 600;
 }
+
+.rocket-desc {
+  line-height: 1.5em;
+}
+
+.reserve-button {
+  font-size: 16px;
+  background-color: rgb(48, 113, 233);
+  padding: 5px 7px;
+  border: 2px solid rgb(48, 113, 233);
+  border-radius: 3px;
+  color: #fff;
+}
+
+.reserve-button:hover {
+  cursor: pointer;
+}
+
+.cancel-button {
+  font-size: 16px;
+  background: none;
+  padding: 5px 7px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  color: gray;
+}
+
+.cancel-button:hover {
+  cursor: pointer;
+}
