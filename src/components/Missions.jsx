@@ -28,8 +28,10 @@ function Missions() {
   }
 
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+    if (missions.length === 0) {
+      dispatch(fetchMissions());
+    }
+  }, [dispatch, missions.length]);
 
   if (isLoading) {
     return <div>Loading...</div>;
