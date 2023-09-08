@@ -102,7 +102,9 @@ exports[`Test rockets component Tests Profile 1`] = `
 `;
 
 exports[`Test rockets component Tests Rockets 1`] = `
-Array [
+<div
+  className="card-container"
+>
   <div
     className="card"
   >
@@ -126,6 +128,7 @@ Array [
       </p>
       <div>
         <button
+          className="reserve-button"
           onClick={[Function]}
           type="button"
         >
@@ -133,7 +136,7 @@ Array [
         </button>
       </div>
     </div>
-  </div>,
+  </div>
   <div
     className="card"
   >
@@ -157,6 +160,7 @@ Array [
       </p>
       <div>
         <button
+          className="reserve-button"
           onClick={[Function]}
           type="button"
         >
@@ -164,7 +168,7 @@ Array [
         </button>
       </div>
     </div>
-  </div>,
+  </div>
   <div
     className="card"
   >
@@ -193,6 +197,7 @@ Array [
       </p>
       <div>
         <button
+          className="cancel-button"
           onClick={[Function]}
           type="button"
         >
@@ -200,7 +205,7 @@ Array [
         </button>
       </div>
     </div>
-  </div>,
+  </div>
   <div
     className="card"
   >
@@ -229,6 +234,7 @@ Array [
       </p>
       <div>
         <button
+          className="cancel-button"
           onClick={[Function]}
           type="button"
         >
@@ -236,6 +242,6 @@ Array [
         </button>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;
