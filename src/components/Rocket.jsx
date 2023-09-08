@@ -19,24 +19,30 @@ const Rocket = () => {
     dispatch(cancelRocketReservation(id));
   };
 
-  return rockets.map((rocket) => (
-    <div className="card" key={rocket.id}>
-      <div className="card-image">
-        <img src={rocket.flickr_images[1]} alt="" />
-      </div>
-      <div className="card-text">
-        <h2>{rocket.rocket_name}</h2>
-        <p className="rocket-desc">
-          {rocket.reserved ? <span className="reserved">Reserved</span> : null}
-          {rocket.description}
-        </p>
-        <div>
-          {rocket.reserved ? (<button type="button" onClick={() => cancelReservation(rocket.id)}>Cancel Reservation</button>)
-            : (<button type="button" onClick={() => handleReserveRocket(rocket.id)}>Reserve Rocket</button>)}
-        </div>
-      </div>
+  return (
+    <div className="card-container">
+      {
+        rockets.map((rocket) => (
+          <div className="card" key={rocket.id}>
+            <div className="card-image">
+              <img src={rocket.flickr_images[1]} alt="" />
+            </div>
+            <div className="card-text">
+              <h2>{rocket.rocket_name}</h2>
+              <p className="rocket-desc">
+                {rocket.reserved ? <span className="reserved">Reserved</span> : null}
+                {rocket.description}
+              </p>
+              <div>
+                {rocket.reserved ? (<button type="button" className="cancel-button" onClick={() => cancelReservation(rocket.id)}>Cancel Reservation</button>)
+                  : (<button type="button" className="reserve-button" onClick={() => handleReserveRocket(rocket.id)}>Reserve Rocket</button>)}
+              </div>
+            </div>
+          </div>
+        ))
+      }
     </div>
-  ));
+  );
 };
 
 export default Rocket;

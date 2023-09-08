@@ -8,7 +8,12 @@ import {
 import './Mission.css';
 
 function Missions() {
-  const missionData = useSelector((store) => store.missions);
+  const missionData = useSelector((store) => store.missions) ?? {
+    isLoading: false,
+    missions: [],
+    error: null,
+    joinedMissions: [],
+  };
   const {
     isLoading, missions, error, joinedMissions,
   } = missionData;

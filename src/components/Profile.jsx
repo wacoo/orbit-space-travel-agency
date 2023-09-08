@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import './Profile.css';
 
 const Profile = () => {
-  const { missions, joinedMissions } = useSelector((store) => store.missions);
+  const { missions = [], joinedMissions = [] } = useSelector((store) => store.missions);
   const rockets = useSelector((state) => state.rockets.rockets);
   const reservedMissions = missions.filter((mission) => joinedMissions.includes(mission.id));
   return (
