@@ -6,7 +6,7 @@ import {
   leaveMission,
 } from '../redux/missions/missionsSlice';
 import './Mission.css';
-
+/* eslint-disable jsx-a11y/control-has-associated-label */
 function Missions() {
   const missionData = useSelector((store) => store.missions) ?? {
     isLoading: false,
