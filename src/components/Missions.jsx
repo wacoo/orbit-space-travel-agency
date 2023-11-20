@@ -49,7 +49,7 @@ function Missions() {
   return (
     <>
       <table className="mission-table">
-      <caption>Missions</caption>
+        <caption>Missions</caption>
         <thead>
           <tr>
             <th className="mission-cell">Mission</th>
