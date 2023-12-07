@@ -1,0 +1,36 @@
+.profile-container {
+  width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-wrapper {
+  display: flex;
+  width: 90%;
+  padding: 24px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+.my-rockets,
+.my-mission {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.my-rockets tr {
+  margin: 0 24px;
+}
+
+.my-rockets th {
+  height: 50px;
+}
+
+.my-rockets td {
+  width: 45%;
+  height: 100px;
+  text-align: center;
+  border: gray solid 2px;
+}

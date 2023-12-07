@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test rockets component Tests Header 1`] = `
+<nav
+  className="header-nav"
+>
+  <div
+    className="logo-container"
+  >
+    <img
+      alt="logo"
+      className="site-logo"
+      src="logo.png"
+    />
+    <h1>
+      Space Travelers' Hub
+    </h1>
+  </div>
+  <ul
+    className="nav-items"
+  >
+    <li>
+      <a
+        aria-current="page"
+        className="nav-link active"
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+    </li>
+    <li>
+      <a
+        className="icon nav-link"
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li>
+      <a
+        className="nav-link"
+        href="/profile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Test rockets component Tests Profile 1`] = `
+<div
+  className="profile-container"
+>
+  <div
+    className="profile-wrapper"
+  >
+    <table
+      className="my-rockets"
+    >
+      <thead>
+        <tr>
+          <th>
+            My Missions
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+    <table
+      className="my-rockets"
+    >
+      <thead>
+        <tr>
+          <th>
+            My Rockets
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <p>
+              Falcon Heavy
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Falcon Light
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Test rockets component Tests Rockets 1`] = `
+<div
+  className="card-container"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-image"
+    >
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      className="card-text"
+    >
+      <h2>
+        Falcon 1
+      </h2>
+      <p
+        className="rocket-desc"
+      >
+        The first to Mars
+      </p>
+      <div>
+        <button
+          className="reserve-button"
+          onClick={[Function]}
+          type="button"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-image"
+    >
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      className="card-text"
+    >
+      <h2>
+        Star Ship
+      </h2>
+      <p
+        className="rocket-desc"
+      >
+        The first to Mars
+      </p>
+      <div>
+        <button
+          className="reserve-button"
+          onClick={[Function]}
+          type="button"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-image"
+    >
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      className="card-text"
+    >
+      <h2>
+        Falcon Heavy
+      </h2>
+      <p
+        className="rocket-desc"
+      >
+        <span
+          className="reserved"
+        >
+          Reserved
+        </span>
+        The first to the moon
+      </p>
+      <div>
+        <button
+          className="cancel-button"
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel Reservation
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-image"
+    >
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      className="card-text"
+    >
+      <h2>
+        Falcon Light
+      </h2>
+      <p
+        className="rocket-desc"
+      >
+        <span
+          className="reserved"
+        >
+          Reserved
+        </span>
+        The first to the moon
+      </p>
+      <div>
+        <button
+          className="cancel-button"
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel Reservation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

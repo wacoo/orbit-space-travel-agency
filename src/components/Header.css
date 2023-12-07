@@ -1,0 +1,41 @@
+.nav-items {
+  display: flex;
+  gap: 30px;
+}
+
+.site-logo {
+  width: 60px;
+  padding: 20px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+  margin-inline: 4%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #03a9f4;
+}
+
+.icon {
+  border-right: 1px solid black;
+  padding-right: 25px;
+}
+
+.active-link {
+  text-decoration: underline;
+  text-decoration-color: #03a9f4;
+}
